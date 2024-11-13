@@ -27,7 +27,7 @@ RUN bash -c 'echo "exec /etc/X11/Xsession /usr/bin/xfce4-session" > /etc/chrome-
 ARG USER=myuser
 # use 6 digits at least
 ENV PIN=123456
-ENV CODE=4/0AVG7fiQzAHmHHOk0L4wXb-aYgmx-Fmob7AUeJMMlRaayMnW4NV5UaPUa6LXJ5v842ivbHQ
+ENV CODE=4/0AeanS0YpWm4qLFqvqj98dpqoYWSGtelP21YXFNFKFUEKsoaVf9TlzsRCcWlbZxzXBv9aNQ
 ENV HOSTNAME=myvirtualdesktop
 # ---------------------------------------------------------- 
 # ADD USER TO THE SPECIFIED GROUPS
