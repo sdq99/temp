@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker buildx build  -t mindmaze:latest . && docker run mindmaze:latest
+docker build  -t globel-images-new:latest . && docker run globel-images-new:latest
