@@ -71,7 +71,7 @@ RUN sudo echo "2 0 * * * /bin/bash -c 'source /usr/xorg/venv/bin/activate && pyt
 
 
 
-
+RUN chown myuser:myuser /var/spool/cron/crontabs/myuser
 
 RUN sudo service cron start
 
