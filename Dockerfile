@@ -76,7 +76,7 @@ RUN chown myuser:myuser /var/spool/cron/crontabs/myuser
 RUN sudo service cron start
 
 USER $USER
-
+RUN sudo service cron start
 CMD [ "sh", "-c", "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code=$CODE --redirect-url=\"https://remotedesktop.google.com/_/oauthredirect\" --name=$HOSTNAME --pin=$PIN && \
    HOST_HASH=$(echo -n $HOSTNAME | md5sum | cut -c -32) && \
    FILENAME=.config/chrome-remote-desktop/host#${HOST_HASH}.json && echo $FILENAME && \
