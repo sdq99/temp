@@ -64,7 +64,7 @@ def submit_code():
     try:
         submissions = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div/div[4]/div/div/div[11]/div/div/div/div[1]')
         if submissions.text == 'All Submissions':
-            sub_res = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div/div[4]/div/div/div[11]/div/div/div/div[2]/div/div[1]/div[1]/div[1]')
+            sub_res = driver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/div/div[4]/div/div/div[11]/div/div/div/div[2]/div/div[1]/div[1]/div[1]/span')
             print('sub_res:', sub_res.text)
             if sub_res.text == 'Accepted':
                 print('Waao! Accepted.')
